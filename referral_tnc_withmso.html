@@ -361,7 +361,7 @@
 
 }	@media only screen and (max-width: 480px){
 		h2{
-			font-size:28px !important;
+			font-size:3.5em !important;
 			line-height:125% !important;
 		}
 
@@ -417,56 +417,15 @@
 		}
 }
 /**Table Style Starts**/
-.gridparent {
-    padding:10px;
-    margin: 0 auto;
-display: grid;
-grid-template-columns: 0.8fr repeat(3, 1fr);
-grid-template-rows: 0.5fr repeat(2, 1fr);
-height:auto;
-grid-column-gap: 0.1em;
-grid-row-gap: 0.1em;
-
-grid-template-areas:
-    'empty first second third'
-    'range1 price1a price2a price3a'
-    'range2 price1b price2b price3b';
+.tableparent {
+    margin: 10px auto;
+    height:auto;
 
 }
 
-
-.empty { grid-area: empty; }
-.first{ grid-area: first; }
-.second { grid-area: second; }
-.third { grid-area: third; }
-.range1 { grid-area: range1;}
-.price1a { grid-area: price1a; }
-.price2a { grid-area: price2a; }
-.price3a { grid-area: price3a; }
-.range2 { grid-area: range2; }
-.price1b { grid-area: price1b; }
-.price2b { grid-area: price2b; }
-.price3b { grid-area: price3b; }
-
-
-.empty, .first, .second , .third{background-color: rgb(241, 130, 124);text-align: center ; font-family:'Source Sans Pro', sans-serif;font-weight:700;font-size: 14px;letter-spacing: 0px;display: flex;
-  align-items: center;
-  justify-content: center;}
-
-.range1 , .range2{text-align: left; font-size: 12px;font-family:'Source Sans Pro', sans-serif;font-weight:700;padding: 10px 0;background-color: #ddb3af;padding-left:1em;letter-spacing: 0px; line-height: 130%;}
-.price1a , .price2a , .price3a {background-color: rgb(255, 235, 234);font-size: 18px;font-family:'Source Sans Pro', sans-serif;font-weight:700;padding:auto 0;letter-spacing: 0px;text-align: center;display: flex;
-  align-items: center;
-  justify-content: center;}
-.price1b, .price2b, .price3b {background-color: rgb(255, 235, 234);font-size: 18px;font-family:'Source Sans Pro', sans-serif;font-weight:700;padding:auto 0; color:grey;letter-spacing: 0px;text-align: center;display: flex;
-  align-items: center;
-  justify-content: center;}
-
-
 @media only screen and (max-width: 600px){
-.first, .second , .third{font-size: 80%;}
- .price1a, .price2b, .price3b, .price1b, .price2a , .price3a{font-size: 3.5vw;}
- .range1 , .range2{font-size: 80%;}
- .gridparent {
+
+ .tableparent {
     padding:0px;
 }
 /**Table Style Ends**/
@@ -487,9 +446,9 @@ grid-template-areas:
 .tnc>ul> .back{
 	text-align: left;
 	list-style-type:none;
-	letter-spacing:;
-	padding: 3% 0%;
+		padding: 3% 0%;
 }
+
 
 @media only screen and (max-width: 480px){
 		.tnc>ul{
@@ -580,7 +539,7 @@ grid-template-areas:
 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="TextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
     <tbody class="TextBlockOuter">
         <tr>
-            <td valign="top" class="TextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+            <td valign="top" class="TextBlockInner" style="padding-top: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
               	<!--[if mso]>
 				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
 				<tr>
@@ -596,7 +555,7 @@ grid-template-areas:
                         
                             
 <span style="letter-spacing:0.3em; text-align:center">
-    <br>
+    
     <h1 style="font-weight:700;color:#314D77;font-size:25px;margin-top:0px;">OFFICE PLUS <span> REFERRAL PROGRAM </span></h1>
 </span>
 <span style="letter-spacing:0.3em; text-align:center">
@@ -606,7 +565,7 @@ grid-template-areas:
         <span>F</span><span>R</span><span>I</span><span>E</span><span>N</span><span>D</span>
     </h2>
 </span>
-<span style="letter-spacing:0.3em; text-align:center"><h3 style="font-weight:400;margin:0px 0;">Earn up to $35,000 cash coupons</h3><br></span>
+<span style="letter-spacing:0.3em; text-align:center"><h3 style="font-weight:400;margin:0px 0;">Earn up to $20,000 cash coupons</h3><br></span>
 
                         </td>
                     </tr>
@@ -680,11 +639,11 @@ outline-offset: -5px; width:100% ;">
     <li>Retail Vouchers of Parknshop / Fortress / Broadway will be given to sucessful referee.</li>
     <li>“Referee” refers to existing Office Plus tenant or Collab member or HSH tenant of Genesis / On Hing Building / Hip Shing Hong Centre / Hip Shing Hong Kowloon Centre
         Prior written notice to Office Plus stating the referral details  (your unit / membership no., name of tenant / member, friend’s name and contact) is a prerequisite.</li>
-   	 <li>Only verified referral is eligible for the offer.</li>
-    	<li>Upon successful completion of all formalities, notification will be given.</li>
-    	<li>This offer cannot be used in conjunction with other promotional offers.</li>
-    	<li>Office Plus and Hip Shing Hong (Holdings) Company Limited reserve the right to change the terms & conditions in relation to this promotion without advance notice.</li>
-    	<li>In case of any dispute, the decision of Office Plus and Hip Shing Hong (Holdings) Company shall be final.</li>
+    <li>Only verified referral is eligible for the offer.</li>
+    <li>Upon successful completion of all formalities, notification will be given.</li>
+    <li>This offer cannot be used in conjunction with other promotional offers.</li>
+    <li>Office Plus and Hip Shing Hong (Holdings) Company Limited reserve the right to change the terms & conditions in relation to this promotion without advance notice.</li>
+	<li>In case of any dispute, the decision of Office Plus and Hip Shing Hong (Holdings) Company shall be final.</li>
 	<li class="back"><a href="#">< Back</a></li>
 </ul> 
 </div>
