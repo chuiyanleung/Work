@@ -23,6 +23,7 @@
 		p{
 			margin:10px 0;
 			padding:0;
+			text-align: center;
 		}
 		table{
 			border-collapse:collapse;
@@ -129,7 +130,7 @@
 			font-style:normal;
 			font-weight:bold;
 			line-height:125%;
-			letter-spacing :0.1em;
+			letter-spacing :0.05em;
 			text-align:center;
 		}
 		h2 span:nth-child(n){color:#EF484A;}
@@ -208,7 +209,7 @@
 			font-family:'Source Sans Pro', sans-serif;
 			font-size:16px;
 			line-height:150%;
-			text-align:left;
+			text-align:center;
 		}
 		#templateHeader .TextContent a,#templateHeader .TextContent p a{
 			color:#002BB8;
@@ -361,7 +362,7 @@
 
 }	@media only screen and (max-width: 480px){
 		h2{
-			font-size:28px !important;
+			font-size:3.5em !important;
 			line-height:125% !important;
 		}
 
@@ -416,62 +417,21 @@
 			line-height:150% !important;
 		}
 }
+
 /**Table Style Starts**/
-.gridparent {
-    padding:10px;
-    margin: 0 auto;
-display: grid;
-grid-template-columns: 0.8fr repeat(3, 1fr);
-grid-template-rows: 0.5fr repeat(2, 1fr);
-height:auto;
-grid-column-gap: 0.1em;
-grid-row-gap: 0.1em;
-
-grid-template-areas:
-    'empty first second third'
-    'range1 price1a price2a price3a'
-    'range2 price1b price2b price3b';
-
+.tableparent {
+    margin: 10px auto;
+    height:auto;
 }
 
-
-.empty { grid-area: empty; }
-.first{ grid-area: first; }
-.second { grid-area: second; }
-.third { grid-area: third; }
-.range1 { grid-area: range1;}
-.price1a { grid-area: price1a; }
-.price2a { grid-area: price2a; }
-.price3a { grid-area: price3a; }
-.range2 { grid-area: range2; }
-.price1b { grid-area: price1b; }
-.price2b { grid-area: price2b; }
-.price3b { grid-area: price3b; }
-
-
-.empty, .first, .second , .third{background-color: rgb(241, 130, 124);text-align: center ; font-family:'Source Sans Pro', sans-serif;font-weight:700;font-size: 14px;letter-spacing: 0px;display: flex;
-  align-items: center;
-  justify-content: center;}
-
-.range1 , .range2{text-align: left; font-size: 12px;font-family:'Source Sans Pro', sans-serif;font-weight:700;padding: 10px 0;background-color: #ddb3af;padding-left:1em;letter-spacing: 0px; line-height: 130%;}
-.price1a , .price2a , .price3a {background-color: rgb(255, 235, 234);font-size: 18px;font-family:'Source Sans Pro', sans-serif;font-weight:700;padding:auto 0;letter-spacing: 0px;text-align: center;display: flex;
-  align-items: center;
-  justify-content: center;}
-.price1b, .price2b, .price3b {background-color: rgb(255, 235, 234);font-size: 18px;font-family:'Source Sans Pro', sans-serif;font-weight:700;padding:auto 0; color:grey;letter-spacing: 0px;text-align: center;display: flex;
-  align-items: center;
-  justify-content: center;}
-
-
 @media only screen and (max-width: 600px){
-.first, .second , .third{font-size: 80%;}
- .price1a, .price2b, .price3b, .price1b, .price2a , .price3a{font-size: 3.5vw;}
- .range1 , .range2{font-size: 80%;}
- .gridparent {
+
+ .tableparent {
     padding:0px;
 }
 /**Table Style Ends**/
-
 }
+
 </style></head>
     <body style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;">
         <!--*|IF:MC_PREVIEW_TEXT|*-->
@@ -550,7 +510,7 @@ grid-template-areas:
 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="TextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
     <tbody class="TextBlockOuter">
         <tr>
-            <td valign="top" class="TextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+            <td valign="top" class="TextBlockInner" style="padding-top: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
               	<!--[if mso]>
 				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
 				<tr>
@@ -566,8 +526,7 @@ grid-template-areas:
                         
                             
 <span style="letter-spacing:0.3em; text-align:center">
-    <br>
-    <h1 style="font-weight:700;color:#314D77;font-size:25px;margin-top:0px;">OFFICE PLUS <span> REFERRAL PROGRAM </span></h1>
+        <h1 style="font-weight:700;color:#314D77;font-size:25px;margin-top:0px;">OFFICE PLUS <span> REFERRAL PROGRAM </span></h1>
 </span>
 <span style="letter-spacing:0.3em; text-align:center">
     <h2 style="font-weight:900;font-size:50px;margin-top:10px;">
@@ -576,7 +535,7 @@ grid-template-areas:
         <span>F</span><span>R</span><span>I</span><span>E</span><span>N</span><span>D</span>
     </h2>
 </span>
-<span style="letter-spacing:0.3em; text-align:center"><h3 style="font-weight:400;margin:0px 0;">Earn up to $35,000 cash coupons</h3><br></span>
+<span style="letter-spacing:0.3em; text-align:center"><h3 style="font-weight:400;margin:0px 0;">Earn up to $20,000 cash coupons</h3><br></span>
 
                         </td>
                     </tr>
@@ -643,28 +602,42 @@ outline-offset: -5px; width:100% ;">
 <span style="letter-spacing:0.3em; text-align:center"></span>
 <br>
 <h4 style="color:#00698E;">HOW IT WORKS</h4>
-<div class="gridparent" style="padding-bottom: 10px;">
-            
-	<div class="empty"></div>
-	<div class="first" >First Referral</div>
-	<div class="second">Second Referral</div>
-	<div class="third">Third Referral</div>
-	<div class="range1">New Tenant's Monthly Rent<br> ≥ $18,000</div>
-	<div class="price1a"  >$20,000*</div>
-	<div class="price2a" >$30,000*</div>
-	<div class="price3a">$35,000*</div>
-	<div class="range2"> New Tenant's Monthly Rent<br> < $18,000</div>
-	<div class="price1b">$12,000*</div>
-	<div class="price2b">$22,000*</div>
-	<div class="price3b">$25,000*</div>
-
-</div>
-
+<!--Table Starts-->
+<table style="border-collapse:collapse;border-spacing:0;table-layout: auto; max-width:600px" class="tableparent">
+		<colgroup>
+			<col style="width: 100px">
+			<col style="width: 150px">
+			<col style="width: 150px">
+			<col style="width: 160px">
+		</colgroup>
+		<thead>
+			<tr>
+			<th style="background-color:#f1827c;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:8px 5px;text-align:left;vertical-align:center;word-break:normal;"></th>
+			<th style="background-color:#f1827c;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:8px 5px;text-align:center;vertical-align:center;word-break:normal;">First Referral</th>
+			<th style="background-color:#f1827c;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:8px 5px;text-align:center;vertical-align:center;word-break:normal;">Second Referral</th>
+			<th style="background-color:#f1827c;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:8px 5px;text-align:center;vertical-align:center;word-break:normal;">Third Referral</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td style="background-color:#ddb3af;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:12px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:center;word-break:norma;line-height:15px;">New Tenant's <br>Monthly Rent<br>≥ $18,000</td>
+		<td style="background-color:#ffebea;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:sans-serif;font-size:16px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:center;word-break:normal;">$20,000*</td>
+		<td style="background-color:#ffebea;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:sans-serif;font-size:16px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:center;word-break:normal;">$30,000*</td>
+		<td style="background-color:#ffebea;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:sans-serif;font-size:16px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:center;word-break:normal;">$35,000*</td>
+			</tr>
+			<tr>
+				<td style="background-color:#ddb3af;border-color:#F9BEBB;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:12px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:center;word-break:normal;line-height:15px;">New Tenant's<br>Monthly Rent<br>&lt; $18,000</td>
+				<td style="background-color:#ffebea;border-color:#F9BEBB;border-style:solid;border-width:2px;color:#656565;font-family:sans-serif;font-size:16px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:center;word-break:normal;">$12,000*</td>
+				<td style="background-color:#ffebea;border-color:#F9BEBB;border-style:solid;border-width:2px;color:#656565;font-family: sans-serif;font-size:16px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:center;word-break:normal;">$22,000*</td>
+				<td style="background-color:#ffebea;border-color:#F9BEBB;border-style:solid;border-width:2px;color:#656565;font-family:sans-serif;font-size:16px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:center;word-break:normal;">$27,000*</td>
+			</tr>
+		</tbody>
+		</table>
+<!--Table Ends-->
 
 
 
     
-<p style="font-weight:400;color:#706A69;font-size:12px; text-align: center;padding: 0 45px;padding: 5px;">*Cash coupons of Parknshop, Fortress or Broadway. <a href="#">Terms & conditions</a> applied. <br> Applicable from 1 Jan to 31 Dec 2021.</p>
+<p style="font-weight:400;color:#706A69;font-size:12px; text-align: center;padding: 0 45px;padding: 5px;">*Cash coupons of Parknshop, Fortress or Broadway. <a href="#">Terms & conditions</a> applied.<br> Applicable from 1 Jan to 31 Dec 2021.</p>
         </td>
     </tr>
 </tbody></table>
