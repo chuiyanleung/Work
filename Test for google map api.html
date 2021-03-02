@@ -7,7 +7,8 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 22.301041, lng: 114.172193 },
       zoom: 13,
-      mapId: "78eb3ebbc4e0d65f"
+      mapId: "78eb3ebbc4e0d65f",
+      disableDefaultUI: true,
     });
     const svgMarker = {
         path:
@@ -44,9 +45,10 @@ function initMap() {
             };
         })(marker,infowindow));
     }
-    new_marker(22.326358,114.168162,'OfficePlus @Prince Edward','香港島中西區永樂街93-103號樹福商業大廈<br>+852 3691 9911');
-    new_marker(22.317307,114.167534,'OfficePlus @Mong Kok','香港島中西區永樂街93-103號樹福商業大廈<br>+852 3691 9911');
-    new_marker(22.2784476,114.1754431,'OfficePlus @Wan Chai','香港島中西區永樂街93-103號樹福商業大廈<br>+852 3691 9911');
+    new_marker(22.326358,114.168162,'OfficePlus @Prince Edward','794-802 Nathan Road');
+    new_marker(22.317307,114.167534,'OfficePlus @Mong Kok','998 Canton Road');
+    new_marker(22.2784476,114.1754431,'OfficePlus @Wan Chai','303 Hennessy Road');
+    new_marker(22.2859646,114.1516023,'OfficePlus @Sheung Wan','93-103 Wing Lok Street');
 }  
 function toggleBounce(marker) {
   if (marker.getAnimation() !== null) {
